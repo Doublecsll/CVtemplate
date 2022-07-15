@@ -27,8 +27,10 @@
             background-color: white;
             position: fixed;
             height: 100%;
-            overflow: auto;
             background-image: url(./img/3.png);
+            box-shadow: 2px 2px 4px #dff5ad;
+            text-align: center;
+            display: table;
         }
 
         li a {
@@ -45,41 +47,61 @@
             border-radius: 50%;
             margin-left: 25px;
             margin-top: 100px;
+            box-shadow: 2px 2px 4px #dff5ad;
         }
 
-        
+        /* grid css below */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 300px 200px 500px;
+            grid-template-rows: repeat(3, 200px);
+            gap: 10px;
+            padding: 10px;
+
+        }
+
+        .grid-container>div {
+
+            box-shadow: 2px 2px 4px #dff5ad;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <!-- navbar -->
-            <div class="col-1 rounded navigation d-flex flex-column justify-content-between">
-                <ul>
-                    <img src="./img/2.jpg" class="iconimg">
-                    <div style="margin-left: 50px;margin-top: 50px;">
-                        <li><a href="#home">About Me</a></li>
-                        <li><a href="#news">Work expriences</a></li>
-                        <li><a href="#contact">project</a></li>
-                        <li><a href="#about">contact</a></li>
-                    </div>
-                </ul>
+        <!-- navbar -->
+        <ul>
+            <div>
+                <img src="./img/2.jpg" class="iconimg">
+                <h2 style="text-align: center;">Double</h2>
+                <h3 style="text-align: center;">Junior Frontend Developer</h3>
             </div>
-
-            <div class="col-5">
-                <div style="margin-left:17%;padding:1px 16px;height:1000px;">
-                    <h2>About Me</h2>
-
-                </div>
+            <div style="margin-top: 50px;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">About Me</a></li>
+                <li><a href="#news">Work expriences</a></li>
+                <li><a href="#contact">project</a></li>
+                <li><a href="#about">contact</a></li>
             </div>
-            <div class="col-6">
-                <div style="margin-left:17%;padding:1px 16px;height:1000px;">
-                    <h2> Me</h2>
-
-                </div>
-            </div>
+        </ul>
+    </div>
+    <!-- grid below -->
+    <div style="margin-left:17%;padding:1px 16px;height:1000px;">
+        <div class="grid-container">
+            <div>About Me</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
         </div>
+    </div>
+    </div>
     </div>
     </div>
 
