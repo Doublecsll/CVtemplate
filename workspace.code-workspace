@@ -1,3 +1,32 @@
-{
-	"folders": []
+ //switch the theme
+function aboutMe() {
+
+	this.document.getElementById("aboutME").hidden = false;
+	this.document.getElementById("workExp").hidden = true;
+	this.document.getElementById("project").hidden = true;
 }
+function workExp() {
+
+	this.document.getElementById("aboutME").hidden = true;
+	this.document.getElementById("workExp").hidden = false;
+	this.document.getElementById("project").hidden = true;
+}
+function project() {
+
+	this.document.getElementById("aboutME").hidden = true;
+	this.document.getElementById("workExp").hidden = true;
+	this.document.getElementById("project").hidden = false;
+}
+
+//popup
+function myFunction() {
+	var popup = document.getElementById("myPopup");
+	popup.classList.toggle("show");
+}
+
+function myFunction1() {
+	var popup = document.getElementById("myPopup1");
+	popup.classList.toggle("show");
+}
+
+//project
